@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Materialboxed</title>
+</head>
+<body class="grey darken-4">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m9">
+                <h2 class="purple-text text-darken-2">Material Box</h2>
+                <div class="red lighten-2 divider"></div>
+                <p class="white-text">Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.
+                </p>
+                <!-- material box -->
+                <img src="images/img1.jpg" alt="" class="materialboxed responsive-img">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m9">
+                <h2 class="purple-text text-darken-2">Slider</h2>
+                <div class="red lighten-2 divider"></div>
+                <p class="white-text">Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col s12 m8">
+                <div class="slider">
+                    <ul class="slides">
+                        <li>
+                            <img src="images/img1.jpg" alt="">
+                            <div class="caption center-align">
+                                <h3 class="grey-text text-darken-4">WELCOME !! </h3>
+                                <h5 class="light grey-text text-darken-4">Visit my website</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img3.jpg" alt="">
+                            <div class="caption left-align">
+                                <h3 class="black-text">WELCOME !! </h3>
+                                <h5 class="grey-text">Visit my website</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img2.jpg" alt="">
+                            <div class="caption right-align">
+                                <h3 class="grey-text">WELCOME !! </h3>
+                                <h5 class="black-text">Visit my website</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/img4.jpg" alt="">
+                            <div class="caption center-align">
+                                <h3 class="white-text">WELCOME !! </h3>
+                                <h5 class="white-text">Visit my website</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div style="height: 1000px"></div>
+    
+    
+    
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    
+    <script>
+        $(document).ready(function(){
+        $('.materialboxed').materialbox({
+            inDuration: 280,
+            outDuration: 200
+        });
+
+        $(document).ready(function(){
+        $('.slider').slider({
+            indicators: true,
+            interval: 3000
+        });
+        });
+        });
+    </script>
+    
+    </body>
+    
+    </html>
+</body>
+</html>

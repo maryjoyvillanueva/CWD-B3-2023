@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/fcd1311e70.js" crossorigin="anonymous"></script>
+
+    <!-- cdnjs-fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="main.css">
+    <title>Navbar & Sidebar</title>
+
+</head>
+
+<body>
+    <h1 class="center">Navbar</h1>
+    <div class="divider red lighten-2"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m10">
+                <br>
+                <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2
+                    main parts of the navbar. A logo or brand link, and the navigations links. You can align these links
+                    to the left or right.</p>
+
+                <!-- Right Aligned links -->
+                <h4>Right Aligned Links</h4>
+                <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+                <br>
+                <nav>
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#" class="brand-logo">
+                                <i class="fa-solid fa-cloud-moon"></i>
+                            </a>
+                            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <br><br><br>
+                <div class="divider"></div>
+                <!-- Left Aligned Links -->
+                <h4>Left Aligned Links</h4>
+                <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+                <br>
+                <nav class="cyan lighten-1">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#" class="right brand-logo">
+                                <i class="fa-solid fa-cloud-moon"></i>
+                            </a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <br><br><br>
+                <div class="divider"></div>
+                <!-- Centering the Logo -->
+                <h4>Centering the Logo</h4>
+                <p>The logo will center itself on medium and down screens, but if you want the logo to always be
+                    centered, add the center class to your <'a class="brand-logo"''>. You will have to make sure
+                        yourself that links do not overlap if you use this.</p>
+                <br>
+                <nav class="green lighten-1 ">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#" class="brand-logo center">
+                                <i class="fa-solid fa-cloud-moon"></i>
+                            </a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li><a href="">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <br><br><br>
+                <div class="divider"></div>
+                <!-- Active Items -->
+                <h4>Active Items</h4>
+                <p>Add active class to your li tags to denote the current page.</p>
+                <br>
+                <nav class="blue lighten-1">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo right">
+                                <i class="fa-solid fa-cloud-moon"></i>
+                            </a>
+                            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                                <li class="active"><a href="">Home</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <br><br><br>
+                <div class="divider"></div>
+                <!-- Extended Navbar with Tabs -->
+                <h4>Extended Navbar with Tabs </h4>
+                <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+                <br>
+                <nav class="nav-extended purple accent-2">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">
+                            <i class="fa-solid fa-cloud-moon"></i>
+                        </a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a href="#test1">Test 1</a></li>
+                            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+                            <li class="tab"><a href="#test3">Test 3</a></li>
+                            <li class="tab disabled"><a href="#test4">Disabled</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <ul class="sidenav" id="mobile-demo">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+                <div id="test1" class="col s12">Test 1</div>
+                <div id="test2" class="col s12">Test 2</div>
+                <div id="test3" class="col s12">Test 3</div>
+                <div id="test4" class="col s12">Test 4</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height: 1000px"></div>
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $(document).ready(function () {
+            // sidebar init
+            $('.sidenav').sidenav({
+                edge: 'right',
+                inDuration: 500,
+                outDuration: 500
+            });
+            // tabs init
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- material icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/fcd1311e70.js" crossorigin="anonymous"></script>
+
+    <!-- cdnjs-fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Cards</title>
+</head>
+
+<body class="grey darken-3">
+    <h1 class="center">Cards</h1>
+    <div class="divider"></div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m8">
+                <p class="white-text">Cards are a convenient means of displaying content composed of different types of objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.</p>
+
+                <!-- Basic cards -->
+                <h3>Basic Cards</h3>
+                <div class="row section scrollspy" id="basic-cards">
+                    <div class="col s12 m8">
+                        <div class="card teal lighten-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Card Title</span>
+                                <p class="white-text">I am a very simple card. I am good at containing small bits of
+                                    information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="">This is a link</a>
+                                <a href="">This is a link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Image cards -->
+                <h3>Image Cards</h3>
+                <div class="row section scrollspy" id="image-cards">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/img10.jpg" alt="">
+                                <span class="card-title black-text">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am
+                                    convenient
+                                    because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="">This is a Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m4">
+                        <p class="white-text">Here is the standard card with an image thumbnail.</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- FABs in cards -->
+                <h3>FABs in cards</h3>
+                <div class="row section scrollspy" id="fabs-in-cards">
+                    <div class="col s12 m8">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/img8.jpg">
+                                <span class="card-title">Card Title</span>
+                                <a class="btn-floating halfway-fab waves-effect waves-light red">
+                                    <i class="material-icons">add</i>
+                                </a>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am
+                                    convenient
+                                    because I require little markup to use effectively.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <p class="white-text">Here is an image card with a small Floating Action Button.</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Horizontal cards -->
+                <h3>Horizontal cards</h3>
+                <div class="row section scrollspy" id="horizontal-cards">
+                    <div class="col s12 m8">
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img src="images/img12.jpg">
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m4">
+                        <p class="white-text">Here is the standard card with a horizontal image.</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Card reveal -->
+                <h3>Card reveal</h3>
+                <div class="row section scrollspy" id="card-reveal">
+                    <div class="col s12 m7">
+                        <div class="card sticky-action">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img src="images/img11.jpg" alt="" class="activator">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title<i
+                                        class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-action">
+                                <a href="">This is a link</a>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title<i
+                                        class="material-icons right">close</i></span>
+                                <p>Here is some more information about this product that is only revealed once clicked
+                                    on.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s12 m5">
+                        <p class="white-text">Here you can add a card that reveals more information once clicked. Just
+                            add the card-reveal div with a span.card-title inside to make this work. Add the class
+                            activator to an element inside the card to allow it to open the card reveal.</p>
+                    </div>
+                </div>
+                <br>
+
+                <!-- Tabs in Cards -->
+                <h3>Tabs in Cards</h3>
+                <p class="white-text">You can add tabs to your cards by adding a dividing cards-tabs div inbetween your header content and your tab content.</p>
+                <div class="row section scrollspy" id="tabs-in-cards">
+                    <div class="col s12 m9">
+                        <div class="card">
+                            <div class="card-content ">
+                                <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-tabs">
+                                <ul class="tabs tabs-fixed-width">
+                                    <li class="tab">
+                                    <a href="#linkedin">Linkedin</a></li>
+                                    <li class="tab"><a href="#youtube">Youtube</a></li>
+                                    <li class="tab"><a href="#discord">Discord</a></li>
+                                </ul>
+                            </div>
+                            <div class="card-content grey lighten-4 center">
+                                <div id="linkedin">
+                                    <i class="fa-brands fa-linkedin large blue-text"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, iste fugit. Reprehenderit, fuga, nesciunt laudantium voluptates explicabo cupiditate, reiciendis perspiciatis blanditiis sapiente doloribus officia excepturi harum esse non pariatur ea.
+                                    </p>
+                                </div>
+                                <div id="youtube">
+                                    <i class="fa-brands fa-youtube large red-text"></i>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis at id aut, officiis et in nisi nihil sequi officia dolorum voluptatibus. Beatae, voluptatibus. Nihil officiis at maxime officia, corrupti aperiam?</p>
+                                </div>
+                                <div id="discord">
+                                    <i class="fa-brands fa-discord large purple-text"></i>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste quibusdam voluptates est, eligendi necessitatibus facilis illo quam quaerat deleniti nesciunt assumenda, quisquam tempora culpa atque nostrum consequatur accusantium veritatis. Quasi!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 m3">
+                        <p class="white-text">Basic white background card with tabs.</p>
+                    </div>
+                </div>
+            </div>
+
+             <!-- side column -->
+             <div class="col m3 offset-m1 hide-on-small-only image-stock-content">
+                <img src="images/img5.png" alt="" class="responsive-img image-img"><br><br>
+                <a href="" class="image-link">Learn free with Materializecss. Start learning amazing codes today. ads via Carbon</a>
+
+                <!-- Scrollspy -->
+                <ul class="section table-of-contents red-text">
+                    <li><a href="#basic-cards" class="white-text">Basic Cards</a></li>
+                    <li><a href="#image-cards" class="white-text">Image Cards</a></li>
+                    <li><a href="#fabs-in-cards" class="white-text">Fabs in Cards</a></li>
+                    <li><a href="#horizontal-cards" class="white-text">Horizontal Cards</a></li>
+                    <li><a href="#card-reveal" class="white-text">Card reveal</a></li>
+                    <li><a href="#tabs-in-cards" class="white-text">Tabs in Cards</a></li>
+
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 1000px;"></div>
+
+
+
+
+
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            //tabs init
+            $('.tabs').tabs();
+
+            //scrollspy init
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+
+</body>
+
+</html>
