@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- material icons -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- fontawesome icons -->
+        <script src="https://kit.fontawesome.com/fcd1311e70.js" crossorigin="anonymous"></script>
+    
+        <!-- cdnjs-fontawesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Parallax and Modals</title>
+</head>
+<body>
+    <div class="navbar-fixed">
+        <nav class="cyan lighten-2">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo center grey-text text-darken-4">Welcome</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- parallax image -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/beach.jpg" alt="">
+        </div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h3 class="cyan-text text-darken-2">Parallax</h3>
+            <p class="flow-text">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="/beach2.jpg" alt="">
+        </div>
+    </div>
+
+    <div class="container">
+        <h3 class="cyan-text text-darken-2">Modals</h3>
+        <p>Use a modal for dialog boxes, confirmation messages, or other content that can be called up. In order for the modal to work you have to add the Modal ID to the link of the trigger. To add a close button, just add the class .modal-close to your button.
+        </p><br>
+
+        <button data-target="modal1" class="btn modal-trigger waves-effect waves-light">Click here</button>
+
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Terms and Conditions</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus excepturi ullam minus maxime itaque? Recusandae dicta veritatis illum ratione, quae repudiandae maxime! Delectus sint cum repellat beatae provident explicabo ipsum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint esse eaque illo laudantium voluptas quis fugiat, quidem, debitis molestias, quo aperiam necessitatibus explicabo nostrum quibusdam consectetur officiis cupiditate adipisci soluta?</p>
+            </div>
+            <div class="modal-footer">
+                <a href="" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <div style="height: 500px;"></div>
+
+
+
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //parallax init
+            $('.parallax').parallax();
+
+            //modal init
+            $('.modal').modal();
+        });
+    </script>
+</body>
+</html>
